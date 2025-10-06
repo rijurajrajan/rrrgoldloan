@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Services | RRR Gold Loan</title>
+
+  <!-- AOS Library -->
+  <link rel="stylesheet" href="https://unpkg.com/aos@2.3.4/dist/aos.css" />
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="style.css" />
+
+  <!-- JS -->
+  <script defer src="script.js"></script>
+  <script src="https://unpkg.com/aos@2.3.4/dist/aos.js"></script>
+</head>
+<body>
+  <!-- HEADER -->
+  <header class="sticky">
+    <div class="logo">💰 RRR Gold Loan</div>
+    <nav class="navbar">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="services.html" class="active">Services</a></li>
+        <li><a href="about.html">About</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <button id="menu-btn">☰</button>
+    </nav>
+  </header>
+
+  <!-- SIDEBAR -->
+  <aside class="sidebar">
+    <a href="index.html">🏠 Home</a>
+    <a href="services.html" class="active">💼 Services</a>
+    <a href="about.html">📖 About</a>
+    <a href="contact.html">📞 Contact</a>
+  </aside>
+
+  <!-- HERO SECTION -->
+  <section class="page-hero" style="background:url('https://plus.unsplash.com/premium_photo-1683122039723-f2d9f46cf0db?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8Z29sZCUyMGxvYW58ZW58MHx8MHx8fDA%3D') center/cover no-repeat;">
+    <div class="overlay"></div>
+    <h1 data-aos="fade-down">Our <span>Services</span></h1>
+  </section>
+
+  <!-- OUR KEY SERVICES -->
+  <section id="services" class="features" data-aos="fade-up">
+  <h2>Our Key Services</h2>
+  <div class="feature-grid">
+    <div class="feature-box">
+      <img src="https://images.unsplash.com/photo-1579621970795-87facc2f976d?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8Mnx8ZmluYW5jZXxlbnwwfHwwfHx8MA%3D%3D" alt="Instant Gold Loan">
+      <h3>Instant Gold Loan</h3>
+      <p>Quick approval and same-day credit within minutes of gold valuation.</p>
+    </div>
+    <div class="feature-box">
+      <img src="https://images.unsplash.com/photo-1607863680198-23d4b2565df0?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8NHx8YmFua3xlbnwwfHwwfHx8MA%3D%3D" alt="Gold Loan Transfer">
+      <h3>Gold Loan Transfer</h3>
+      <p>Switch your loan to RRR Gold Loan with lower rates and flexible repayment.</p>
+    </div>
+    <div class="feature-box">
+      <img src="https://images.unsplash.com/photo-1565373679107-344d38dbf734?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8M3x8aW5kaWFuJTIwbW9uZXl8ZW58MHx8MHx8fDA%3D" alt="Gold Loan Top-Up">
+      <h3>Gold Loan Top-Up</h3>
+      <p>Need extra cash? Increase your existing loan without extra paperwork.</p>
+    </div>
+  </div>
+</section>
+
+
+  <!-- EMI CALCULATOR -->
+ <section id="emi" class="emi-section" data-aos="fade-up" style="background:url('https://plus.unsplash.com/premium_photo-1677822252733-1e1aa38e90df?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MXx8ZW1pJTIwY2FsY3VsYXRvcnxlbnwwfHwwfHx8MA%3D%3D') center/cover no-repeat;">
+  <div class="overlay"></div>
+  <div class="emi-calculator-wrapper">
+    <h2>💳 EMI Calculator</h2>
+    <div class="emi-calculator">
+      <label>Loan Amount (₹):</label>
+      <input type="number" id="loanAmount" placeholder="Enter loan amount" required>
+      <label>Interest Rate (% per annum):</label>
+      <input type="number" id="interestRate" placeholder="Enter interest rate" required>
+      <label>Loan Tenure (months):</label>
+      <input type="number" id="loanTenure" placeholder="Enter tenure" required>
+      <button class="btn" onclick="calculateEMI()">Calculate EMI</button>
+      <div id="emiResult"></div>
+    </div>
+  </div>
+</section>
+
+  <!-- FAQ SECTION -->
+
+<section id="faq" class="faq-section" data-aos="fade-up">
+  <h2>Frequently Asked Questions</h2>
+  <div class="faq-item">
+    <img src="https://media.istockphoto.com/id/1291328928/photo/new-indian-five-hundred-rupees-note-coins-and-gold-jewelry-over-yellow-background.webp?a=1&b=1&s=612x612&w=0&k=20&c=o9dKKC7A1fyq5Xl-HqC7FjR3TN-R2zjwfxuZF9NZKlY=" alt="FAQ Icon" class="faq-icon">
+    <div class="faq-question">💰 What is the maximum loan amount I can get? <span>+</span></div>
+    <div class="faq-answer">Up to 90% of your gold’s market value depending on purity and weight.</div>
+  </div>
+  <div class="faq-item">
+    <img src="https://media.istockphoto.com/id/1291330978/photo/gold-bangles-and-indian-rupees-coins-in-bowl-on-yellow-background.jpg?s=612x612&w=0&k=20&c=nKwg4cuws50JxIqKOr_Ht_Hjx1M5qXn535gxx0RzZzs=" alt="FAQ Icon" class="faq-icon">
+    <div class="faq-question">⏱ How long does it take to process a gold loan? <span>+</span></div>
+    <div class="faq-answer">Most loans are approved within 30 minutes after gold valuation.</div>
+  </div>
+</section>
+
+  <!-- FOOTER -->
+  <footer>
+    <div class="footer-links">
+      <a href="index.html">Home</a>
+      <a href="services.html">Services</a>
+      <a href="about.html">About</a>
+      <a href="contact.html">Contact</a>
+    </div>
+    <p>© 2025 RRR Gold Loan | All Rights Reserved</p>
+  </footer>
+</body>
+</html>
